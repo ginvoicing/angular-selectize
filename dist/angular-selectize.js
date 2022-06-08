@@ -122,9 +122,9 @@
                     scope.$watch('ngDisabled', toggle);
                 };
 
-                element.selectize(settings);
+                $(element).selectize(settings);
 
-                element.on('$destroy', function () {
+                $(element).on('$destroy', function () {
                     if (selectize) {
                         selectize.destroy();
                         element = null;
